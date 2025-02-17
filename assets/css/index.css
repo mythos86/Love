@@ -1,0 +1,52 @@
+/* index_2.css */
+
+h1 {
+    color: #ff3366;
+    /* pink */
+    font-size: 3rem;
+    /* font size */
+}
+
+/* Basic layout for title */
+.title {
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* Animation for the heart */
+.heart {
+    position: fixed;
+    /* Use fixed to keep it within the viewport */
+    color: #ff3366;
+    /* pink */
+    font-size: 5rem;
+    /* font size */
+    animation: fall linear infinite;
+    /* animation */
+    z-index: 10;
+    /* ensures it's above other elements */
+    top: 0;
+    /* explicitly set starting position at the top */
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(0);
+        /* start from the top of the screen */
+        opacity: 1;
+        /* fully visible */
+    }
+
+    to {
+        transform: translateY(100vh);
+        /* move down */
+        opacity: 0;
+        /* fade out */
+    }
+}
+
+/* Body styling to prevent overlap */
+body {
+    background-color: #ffccff;
+    /* light pink */
+}

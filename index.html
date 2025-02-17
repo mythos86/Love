@@ -1,53 +1,27 @@
-<!DOCTYPE html><html lang="en">
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday!</title>
-    <style>
-        body {
-            background-color: #ffccff;
-            text-align: center;
-            font-family: Arial, sans-serif;
-            overflow: hidden;
-        }
-        h1 {
-            color: #ff3366;
-            font-size: 3rem;
-            margin-top: 20vh;
-        }
-        .heart {
-            position: absolute;
-            color: #ff3366;
-            font-size: 2rem;
-            animation: fall linear infinite;
-        }
-        @keyframes fall {
-            from {
-                transform: translateY(-100px);
-                opacity: 1;
-            }
-            to {
-                transform: translateY(100vh);
-                opacity: 0;
-            }
-        }
-    </style>
+    <!-- refer to the favicon -->
+    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <!-- refer to the bootstrap css file -->
+    <link rel="stylesheet" href="assets/css/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <!-- refer to the css file -->
+    <link rel="stylesheet" href="assets/css/index.css">
+    <!-- refer to the bootstrap js file -->
+    <script src="assets/js/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+    <!-- refer to the js file -->
+    <script src="assets/js/index.js"></script>
 </head>
+
 <body>
-    <h1>Happy Birthday, Love!</h1>
-    <script>
-        function createHeart() {
-            const heart = document.createElement("div");
-            heart.classList.add("heart");
-            heart.innerHTML = "❤";
-            heart.style.left = Math.random() * 100 + "vw";
-            heart.style.animationDuration = Math.random() * 3 + 2 + "s";
-            document.body.appendChild(heart);
-            setTimeout(() => {
-                heart.remove();
-            }, 5000);
-        }
-        setInterval(createHeart, 300);
-    </script>
+    <div class="title">
+        <h1>Happy Valentine, Love!</h1>
+    </div>
 </body>
+
 </html>
